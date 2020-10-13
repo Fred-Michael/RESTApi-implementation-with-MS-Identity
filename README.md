@@ -10,6 +10,7 @@ The main logic is contained within the `Controllers` file inside the `Week10Corr
 ### Request
 
 `GET /allUsers/{page}`
+
 **You pass in** the page number you want to view records. **You get** a paginated response of all users in the database
 
 **Successful Response:**
