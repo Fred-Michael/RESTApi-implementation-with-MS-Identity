@@ -5,9 +5,11 @@ This is a user-centric application that implements a REST API architecture using
 The main logic is contained within the `Controllers` file inside the `Week10Correction` folder
 
 
+
 ## The endpoints:
 
 ### Requests
+
 
 
 `GET /allUsers/{page}`
@@ -33,6 +35,7 @@ Content-Type: application/json
     "gender": "XXXX"
 }
 ```
+
 
 `POST /register`
 
@@ -62,6 +65,7 @@ HTTP/1.1 200 OK("Registration was successful");
 ```
 HTTP/1.1 400 BadRequest();
 ```
+
 
 `POST /login`
 
