@@ -14,7 +14,7 @@ The main logic is contained within the `Controllers` file inside the `Week10Corr
 
 `GET /allUsers/{page}`
 
-**You pass in** the page number you want to view records. **You get** a paginated response of all users in the database
+**You pass in**: the page number you want to view records. **You get**: a paginated response of all users in the database
 
 **Successful Response:**
 ```json
@@ -39,7 +39,7 @@ Content-Type: application/json
 
 `POST /register`
 
-**You pass in** your credentials as a new user. **You get** success or failure status code indicating if your registration was successful
+**You pass in**: your credentials as a new user. **You get**: success or failure status code indicating if your registration was successful
 
 **Request:**
 ```json
@@ -69,7 +69,7 @@ HTTP/1.1 400 BadRequest();
 
 `POST /login`
 
-**You pass in** your login credentials as an existing user. **You get** your details with your API token for further access to the restricted endpoint
+**You pass in**: your login credentials as an existing user. **You get**: your details with your API token for further access to the restricted endpoint
 
 **Request:**
 ```json
@@ -107,7 +107,7 @@ HTTP/1.1 400 BadRequest();
 
 `This route is protected and for one to access it, he/she must be logged in and use the generated token as an authentication to access this route`
 
-**You pass in** your credentials. **You get** your full details only accessible by you (except you give your login details to another user 🙃)
+**You pass in**: your credentials. **You get**: your full details only accessible by you (except you give your login details to another user 🙃)
 
 **Request:**
 ```json
