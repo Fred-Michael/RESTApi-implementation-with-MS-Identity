@@ -7,7 +7,8 @@ The main logic is contained within the `Controllers` file inside the `Week10Corr
 
 ## The endpoints:
 
-### Request
+### Requests
+
 
 `GET /allUsers/{page}`
 
@@ -34,6 +35,7 @@ Content-Type: application/json
 ```
 
 `POST /register`
+
 **You pass in** your credentials as a new user. **You get** success or failure status code indicating if your registration was successful
 
 **Request:**
@@ -62,6 +64,7 @@ HTTP/1.1 400 BadRequest();
 ```
 
 `POST /login`
+
 **You pass in** your login credentials as an existing user. **You get** your details with your API token for further access to the restricted endpoint
 
 **Request:**
@@ -71,7 +74,7 @@ Accept: application/json
 Content-Type: application/json
 {
     "Email" : "me@eg.com",
-    "Password" : `a six-digit password with at least an uppercase, a lowercase, symbol and numbers`
+    "Password" : `a_six-digit_password_with_at_least_an_uppercase,_a_lowercase,_symbol_and_numbers`
 }
 ```
 
