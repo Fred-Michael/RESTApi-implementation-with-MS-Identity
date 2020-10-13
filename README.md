@@ -74,7 +74,7 @@ Accept: application/json
 Content-Type: application/json
 {
     "Email" : "me@eg.com",
-    "Password" : `a_six-digit_password_with_at_least_an_uppercase,_a_lowercase,_symbol_and_numbers`
+    "Password" : "a six-digit password with at least an uppercase, a lowercase, symbol and numbers"
 }
 ```
 
@@ -88,7 +88,7 @@ Content-Type: application/json
     "email": "XXXX@eg.com",
     "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJjYjQ5MjdmMS0xY2Y1LTRmYzgtYTViMC1mYTM2ZmM1ZDFhZGEiLCJ1bmlxdWVfbmFtZSI6IlRlc3QiLCJuYmYiOjE2MDI0MTkzMzgsImV4cCI6MTYwMjY3ODUzOCwiaWF0IjoxNjAyNDE5MzM4fQ.OQsrbcv41R37zQW_r7MF2HMUMUJxGYUmECyououDs8pCx3QzrDVX9FD3mAFtMZfz9PLkgHMTEu0VA43e49tKHB",
     "department": "XXXX",
-    "gender": XXXX,
+    "gender": "XXXX",
     "dateEmployed": "XXXXXXXXXXXXXXXXX"
 }
 ```
@@ -98,7 +98,9 @@ Content-Type: application/json
 HTTP/1.1 400 BadRequest();
 ```
 
+
 `POST /getUserDetails`
+
 `This route is protected and for one to access it, he/she must be logged in and use the generated token as an authentication to access this route`
 
 **You pass in** your credentials. **You get** your full details only accessible by you (except you give your login details to another user 🙃)
